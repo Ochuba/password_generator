@@ -1,0 +1,49 @@
+body{
+    background-color: #0000FF;
+    color: beige;
+}
+.pass_field{
+    display: flex;
+    flex-direction: row;
+    
+}
+.pass_field i{
+    position: relative;
+    right: 20;
+    color: white;
+    padding-right: 5px;
+}
+.form{
+    background-color: #000075;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 400px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+.word{
+    margin-bottom: 20px;
+}
+.length{
+    width: 30px;
+}
+.number{
+    margin-bottom: 5px;
+}
+.number label{
+    color: azure;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+#generate_password{
+    margin-top: 20px;
+    width: 150px;
+    height: 30px;
+}

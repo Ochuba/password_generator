@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="form">
+        <div class="heading">
+            <h1>PASSGEN</h1>
+            <p>Generate Your passowrd</p>
+        </div>
+        <div class="pass_field">
+            <i class="fas fa-clipboard" id="clipboard"></i>
+        <input type="text" id="password" class="word">
+      
+        </div>
+        <div class="number">
+        <label for="Password_length">Password Length</label>
+        <input type="number" id="passowrd_length" class="length">
+        </div>
+        <div class="number">
+            <label for="number">Number?</label>
+            <input type="checkbox" id="number" class="number">
+        </div>
+        <div class="number">
+            <label for="lower_case">LowerCase?</label>
+            <input type="checkbox" id="lower_case" class="number">
+        </div>
+        <div class="number">
+            <label for="number">Uppercase?</label>
+            <input type="checkbox" id="upper_case" class="number">
+        </div>
+        <div class="number">
+            <label for="number">Symbol?</label>
+            <input type="checkbox" id="symbol" class="number">
+        </div>
+
+        <button id="generate_password">Generate Password</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="testing.js"></script>
+
+</body>
+</html>
