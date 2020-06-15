@@ -54,8 +54,10 @@ let pass_obj = {
 
     if  (!checknum && !lowerchecked && !upperchecked && !symchecked){
         alert('Please click at least one checkbox!!');
-    } else{
-   elpassword.value =  password_gen(modifyObj(pass_obj, lowerchecked, upperchecked, checknum, symchecked), lengthint);
+    } else if(ellength == ""){
+        alert('Input the length of your password please!!');
+   } else{
+    elpassword.value =  password_gen(modifyObj(pass_obj, lowerchecked, upperchecked, checknum, symchecked), lengthint);
    }
 
 })
