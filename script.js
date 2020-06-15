@@ -1,6 +1,8 @@
 let elbutton = document.getElementById('generate_password');
 let elclip = document.getElementById('clipboard');
 let elpassword = document.getElementById("password");
+
+// generates the individual characters of the password
 class password_generator{
     constructor(lower, higher, number, symbol){
         this.lower = lower;
@@ -30,7 +32,7 @@ class password_generator{
 
      
 }
-
+// creates a new instance of the class
 let newPass = new password_generator();
 let pass_obj = {
     lowerPass: newPass.random_lower,
@@ -38,7 +40,7 @@ let pass_obj = {
      numberPass: newPass.random_number,
      symPass: newPass.random_symbol
  };
-
+// handles the click event for the generate password button
  elbutton.addEventListener('click', () =>{
     
     let ellength = document.getElementById('passowrd_length').value;
@@ -70,7 +72,7 @@ elclip.addEventListener('click', () => {
  
  
 })
-
+// checks whether the checkboxes are clicked and removes the character of any not clicked 
 function modifyObj (obj, low, high, num, sym){
     let modified = obj 
     
@@ -107,7 +109,7 @@ function modifyObj (obj, low, high, num, sym){
 
 }
 
-   
+ // generates the password  
 function password_gen(pass, num){
     
     let lenght = Object.keys(pass).length;
@@ -121,9 +123,5 @@ function password_gen(pass, num){
      return password;
    }
 
-console.log(newPass.random_lower());
-console.log(newPass.random_number());
-console.log(newPass.random_higher());
-console.log(newPass.random_symbol());
 
 
